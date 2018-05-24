@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
+import {BrowserRouter} from 'react-router-dom';
 import './index.css';
+
+//Components
+import Routes from './Routes';
 
 class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1>Сегодня рубанем в Ярость Дракулы!</h1>
-        <p>На бэке NodeJS, на фронте ReactJS</p>
-        <p>планирую реализовать SPA</p>
-      </div>
+
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+
     );
   }
 }

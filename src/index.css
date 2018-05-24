@@ -1,10 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
-.App {
-  font-size: 46px;
-  color: red;
+.dashed_line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 356;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.251);
+  border-top: 1px dashed rgba(0, 0, 0, 0.251);
 }
+
+

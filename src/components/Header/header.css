@@ -1,0 +1,15 @@
+.header {
+    width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    background-image: url('../../img/header_section_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.header>.dashed_line {
+    bottom: 10px;
+}

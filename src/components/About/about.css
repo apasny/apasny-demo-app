@@ -1,0 +1,23 @@
+.about_section {
+    background-image: url('../../img/about-section-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.about_section::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 2px;
+        z-index: 351;  
+}
+
+.about_section>.dashed_line {
+    top:10px;
+}
