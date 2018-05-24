@@ -1,5 +1,5 @@
-.about_section {
-    background-image: url('../../img/about-section-bg.png');
+.portfolio_section {
+    background-image: url('../../img/portfolio-section-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.about_section::before {
+.portfolio_section::before {
         content: "";
         background-color: rgba(0, 0, 0, 0.2);
         position: absolute;

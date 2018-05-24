@@ -12,4 +12,10 @@ body {
   border-top: 1px dashed rgba(0, 0, 0, 0.251);
 }
 
+.top {
+  top: 10px;
+}
 
+.bottom {
+  bottom: 10px;
+}

@@ -1,5 +1,5 @@
-.about_section {
-    background-image: url('../../img/about-section-bg.png');
+.blog_section {
+    background-image: url('../../img/blog-section-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.about_section::before {
+.blog_section::before {
         content: "";
         background-color: rgba(0, 0, 0, 0.2);
         position: absolute;

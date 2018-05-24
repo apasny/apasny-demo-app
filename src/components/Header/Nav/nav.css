@@ -56,21 +56,23 @@
     width: 10%;
     text-align: center;
     position: relative;
-    background-image: url('../../../img/logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    display: flex;
+    justify-content: center;
 }
 
 .nav__item.logo a {
     font-family: Seaside-Resort-NF;
     color: #f6edd8;
-    font-size: 4em;
+    font-size: 3.5em;
+}
 
-    position: absolute;
-    top: -45px;
-    left: 0;
-    right: 0;
-    padding: 30px;
+.logo_badge {
+    background-image: url('../../../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 15px;
+    position: fixed;
+    top: 5px;
     z-index: 999;
 }

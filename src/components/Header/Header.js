@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="header">
       <Nav />
-      <div className="dashed_line"></div>
+      <div className="dashed_line bottom"></div>
     </div>
   )
 }
