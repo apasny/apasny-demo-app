@@ -1,37 +1,15 @@
-@font-face {
-    font-family: 'Bazar';
-    src: url('../../.../../.../../../fonts/Bazar/Bazar.eot');
-    src: url('../../.../../../fonts/Bazar/Bazar.eot?#iefix') format('embedded-opentype'),
-        url('../../.../../../fonts/Bazar/Bazar.woff2') format('woff2'),
-        url('../../.../../../fonts/Bazar/Bazar.woff') format('woff'),
-        url('../../.../../../fonts/Bazar/Bazar.ttf') format('truetype'),
-        url('../../.../../../fonts/Bazar/Bazar.svg#Bazar') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Seaside-Resort-NF';
-    src: url('../../.../../../fonts/Seaside-Resort-NF/SeasideResortNF.eot');
-    src: url('../../.../../../fonts/Seaside-Resort-NF/SeasideResortNF.eot?#iefix') format('embedded-opentype'),
-        url('../../.../../../fonts/Seaside-Resort-NF/SeasideResortNF.woff2') format('woff2'),
-        url('../../.../../../fonts/Seaside-Resort-NF/SeasideResortNF.woff') format('woff'),
-        url('../../.../../../fonts/Seaside-Resort-NF/SeasideResortNF.ttf') format('truetype'),
-        url('../../.../../../fonts/Seaside-Resort-NF/SeasideResortNF.svg#SeasideResortNF') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .nav {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     width: inherit;
-    height: 100%;
     align-content: center;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    min-height: 100px;
+    max-height: 200px;
 }
 
 .nav__item {
@@ -45,11 +23,12 @@
 
 .nav__item a {
     text-decoration: none;
-    font-family: Bazar;
+    font-family: "Bazar";
     font-weight: 500;
     text-transform: uppercase;
     color: #f9ebd9;
     font-size: 1.5em;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .nav__item.logo {
@@ -61,7 +40,7 @@
 }
 
 .nav__item.logo a {
-    font-family: Seaside-Resort-NF;
+    font-family: "Seaside-Resort-NF";
     color: #f6edd8;
     font-size: 3.5em;
 }
@@ -72,7 +51,67 @@
     background-position: center;
     background-size: contain;
     padding: 15px;
-    position: fixed;
-    top: 5px;
     z-index: 999;
+}
+
+/* Cellphones */
+
+@media only screen and (max-device-width: 540px) {
+    .nav__item.logo a {
+        font-size: 2em;
+    }
+
+    .nav__item {
+        display: none;
+    }
+
+    .nav__item.logo {
+        visibility: visible;
+    }
+
+    .nav::before {
+        content:"";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 20px;
+        background-image: url('../../../img/menu.svg');
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .nav__item.logo a {
+        font-size: 2em;
+    }
+
+    .nav__item {
+        display: none;
+    }
+
+    .nav__item.logo {
+        visibility: visible;
+    }
+
+    .nav::before {
+        content:"";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 20px;
+        background-image: url('../../../img/menu.svg');
+    }
+}
+
+/* Tablets */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    .nav {
+        align-content: space-around;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 }

@@ -8,12 +8,171 @@
 }
 
 .about_section::before {
-        content: "";
-        background-color: rgba(0, 0, 0, 0.2);
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        height: 2px;
-        z-index: 351;  
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 2px;
+    z-index: 351;
+}
+
+.row,
+.col {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.col {
+    width: 300px;
+}
+
+.col {
+    margin-top: 20px;
+}
+
+.row h2 {
+    font-size: 3.5em;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: "Bazar";
+    color: rgb(57, 58, 58);
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(252, 250, 247, 1), 2px 2px 0px rgba(72, 74, 77, 0.7);
+    margin-bottom: 0;
+    margin-top: 5%;
+}
+
+.separator p {
+    font-family: "Raleway";
+    font-weight: normal;
+    color: rgb(57, 58, 58);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.separator p::before,
+.separator p::after {
+    background-color: rgb(59, 59, 59);
+    width: 40px;
+    height: 2px;
+    content: "";
+    display: block;
+    position: absolute;
+  }
+  
+  .separator p::before {
+    left: -45px;
+    top: 9px;
+  }
+
+  .separator p::after {
+    right: -45px;
+    top: 9px;
+}
+
+.i_am p {
+    font-family: "Oswald";
+    font-weight: normal;
+    color: rgb(56, 53, 62);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+
+.col__img {
+    align-self: center;
+    width: 100%;
+    height: 100px;
+}
+
+.col__header {
+    font-family: "Bazar";
+    text-transform: uppercase;
+    font-weight: normal;
+    color: rgb(56, 58, 60);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.col__header p {
+    font-family: "Roboto Slab";
+    font-size: 0.7em;
+    position: relative;
+}
+
+.col__header p::after {
+    background-color: rgb(56, 58, 60);
+    width: 40px;
+    height: 4px;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -20px;
+  }
+
+.col__text, .col__img, .col__header {
+    width: inherit;
+    line-height: 1rem;
+}
+
+.col__text {
+    text-align: justify;
+    font-family: "Roboto Slab";
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.col__text p,
+.col__header p {
+    padding: 0;
+    margin: 0;
+}
+
+.tv, .cd, .shirt, .food {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.tv{
+    background-image: url('../../img/tv.png');
+}
+.cd{
+    background-image: url('../../img/vinyl.png');
+}
+.shirt{
+    background-image: url('../../img/t-shirt.png');
+}
+.food{
+    background-image: url('../../img/food.png');
+}
+
+@media screen 
+  and (min-device-width: 1200px)  { 
+
+    .row {
+        flex-direction: row;
+    }
+
+    .row h2 {
+        margin-top: 3%;
+    }
+
+    .col:not(:first-child) {
+        margin-left: 25px;
+    }
 }

@@ -1,6 +1,21 @@
-body {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: 'Bazar';
+  src: url('./fonts/Bazar/Bazar.eot');
+  src: url('./fonts/Bazar/Bazar.eot?#iefix') format('embedded-opentype'), url('./fonts/Bazar/Bazar.woff2') format('woff2'), url('./fonts/Bazar/Bazar.woff') format('woff'), url('./fonts/Bazar/Bazar.ttf') format('truetype'), url('./fonts/Bazar/Bazar.svg#Bazar') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Seaside-Resort-NF';
+  src: url('./fonts/Seaside-Resort-NF/SeasideResortNF.eot');
+  src: url('./fonts/Seaside-Resort-NF/SeasideResortNF.eot?#iefix') format('embedded-opentype'), url('./fonts/Seaside-Resort-NF/SeasideResortNF.woff2') format('woff2'), url('./fonts/Seaside-Resort-NF/SeasideResortNF.woff') format('woff'), url('./fonts/Seaside-Resort-NF/SeasideResortNF.ttf') format('truetype'), url('./fonts/Seaside-Resort-NF/SeasideResortNF.svg#SeasideResortNF') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, #root {
+  height: 100%;
 }
 
 .dashed_line {
