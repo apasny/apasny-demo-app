@@ -14,8 +14,8 @@ render(){
       return (
       <Layout>
         <Switch>
-            <Route path='/' exact component={Slider}/>
-            <Route path='/about' component={About}/>
+            <Route path='/' exact component={About}/>
+            <Route path='/slider' component={Slider}/>
             <Route path='/portfolio' component={Portfolio}/>
             <Route path='/blog' component={Blog}/>
             <Route path='/contact' component={Contact}/>

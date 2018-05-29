@@ -5,6 +5,7 @@
     height: 100%;
     width: 100%;
     position: relative;
+    padding-bottom: 15px;
 }
 
 .about_section::before {
@@ -163,6 +164,10 @@
 
 @media screen 
   and (min-device-width: 1200px)  { 
+
+    .about_section {
+        padding-bottom: 0;
+    }
 
     .row {
         flex-direction: row;
